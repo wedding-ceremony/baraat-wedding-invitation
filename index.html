@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#581C2B">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet">
+<title>Baraat Ceremony | Digital Wedding Invitation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<main id="app">
+  <section class="screen opening active" id="opening">
+    <div class="frame-bg"></div>
+    <div class="opening-content">
+      <p class="top-kicker">A CELEBRATION OF LOVE & FAMILY</p>
+      <div class="opening-spacer"></div>
+      <div class="open-copy">
+        <span class="tiny-star">✦</span>
+        <p class="serif opening-title">A Special<br><strong>Invitation</strong></p>
+        <p class="sub-copy">AWAITS YOUR PRESENCE</p>
+        <button class="gold-button tap-open" id="tapOpen"><span class="pulse-dot"></span>TAP TO OPEN<span class="button-arrow">↗</span></button>
+      </div>
+      <p class="bottom-kicker">BARAAT CEREMONY · LAHORE</p>
+    </div>
+  </section>
+
+  <section class="screen scratch-screen" id="scratchScreen">
+    <div class="scratch-backdrop"></div>
+    <div class="scratch-heading">
+      <p class="eyebrow">A MOMENT OF SURPRISE</p>
+      <h1 class="serif">A Special Invitation<br><em>Awaits You</em></h1>
+      <p class="scratch-instruction">SCRATCH HERE TO REVEAL</p>
+    </div>
+    <div class="scratch-card" id="scratchCard">
+      <div class="hidden-date">
+        <span class="date-caption">SAVE THE DATE</span>
+        <strong>11</strong>
+        <span class="month">DECEMBER</span>
+        <span class="year">2026</span>
+        <span class="date-spark">✦</span>
+      </div>
+      <canvas id="scratchCanvas" aria-label="Scratch the gold foil to reveal the wedding date"></canvas>
+      <div class="scratch-frame"></div>
+    </div>
+    <p class="scratch-progress" id="scratchProgress">Gently scratch the golden surface with your finger</p>
+    <button class="text-button" id="replayScratch">↻ REPLAY SCRATCH</button>
+    <button class="gold-button next-button" id="toInvitation" disabled>CONTINUE TO INVITATION <span>→</span></button>
+  </section>
+
+  <section class="screen invitation-screen" id="invitation">
+    <div class="invitation-bg"></div>
+    <div class="invitation-inner">
+      <div class="ornament-rule"><span>✦</span></div>
+      <p class="eyebrow">YOU ARE CORDIALLY INVITED</p>
+      <div class="flip-wrap" id="flipWrap">
+        <article class="invitation-card" id="invitationCard">
+          <div class="card-face card-front">
+            <div class="card-monogram">B<span>&</span></div>
+            <p class="card-overline">TOGETHER WITH THEIR FAMILIES</p>
+            <h2 class="serif event-heading">BARAAT<br><em>CEREMONY</em></h2>
+            <p class="invite-message">Together with their families, we request the honour of your presence to celebrate this joyous occasion.</p>
+            <div class="thin-divider"><span>✧</span></div>
+            <p class="family-detail">D/O M. Sabir</p>
+            <p class="ampersand">&</p>
+            <p class="family-detail">S/O M. Khalid</p>
+            <button class="card-turn" id="cardTurn">VIEW DATE & DETAILS <span>↗</span></button>
+          </div>
+          <div class="card-face card-back">
+            <p class="card-overline">THE DAY WE CELEBRATE</p>
+            <div class="date-back"><strong>11</strong><span>DECEMBER 2026</span></div>
+            <div class="thin-divider"><span>✧</span></div>
+            <div class="date-time-row"><span>◷</span><b>6:00 PM to 10:00 PM</b></div>
+            <p class="back-note">We would be delighted by your presence.</p>
+            <button class="card-turn back-turn" id="backToFront">BACK TO INVITATION <span>↶</span></button>
+          </div>
+        </article>
+      </div>
+      <p class="card-hint">TAP THE CARD TO TURN</p>
+      <div class="ornament-rule bottom-rule"><span>✦</span></div>
+      <button class="gold-button details-button" id="toDetails">VENUE & CONTACT DETAILS <span>↓</span></button>
+    </div>
+  </section>
+
+  <section class="screen details-screen" id="details">
+    <div class="details-bg"></div>
+    <div class="details-wrap">
+      <p class="eyebrow">WE LOOK FORWARD TO WELCOMING YOU</p>
+      <h2 class="serif details-title">The <em>Celebration</em></h2>
+      <section class="info-panel">
+        <div class="panel-icon">⌖</div>
+        <p class="panel-label">LOCATION</p>
+        <h3 class="serif">Marriage Hut</h3>
+        <p class="address">144-Main College Road,<br>Gul-e-Daman, Lahore</p>
+        <a class="outline-button" href="https://www.google.com/maps/search/?api=1&query=Marriage+Hut%2C+144-Main+College+Road%2C+Gul-e-Daman%2C+Lahore" target="_blank" rel="noopener">OPEN LOCATION <span>↗</span></a>
+      </section>
+      <section class="count-panel">
+        <p class="panel-label">COUNTING DOWN TO THE DAY</p>
+        <div class="countdown">
+          <div><b id="days">--</b><small>DAYS</small></div><i>:</i>
+          <div><b id="hours">--</b><small>HOURS</small></div><i>:</i>
+          <div><b id="minutes">--</b><small>MINUTES</small></div><i>:</i>
+          <div><b id="seconds">--</b><small>SECONDS</small></div>
+        </div>
+      </section>
+      <section class="contacts">
+        <p class="panel-label">CONTACT US</p>
+        <h3 class="serif">For any assistance</h3>
+        <div class="contact-item">
+          <div class="contact-person"><b>M. Sabir</b><span>+92 309 9677962</span></div>
+          <div class="contact-actions"><a class="whatsapp" href="https://wa.me/923099677962" target="_blank" rel="noopener">WhatsApp</a><a class="call" href="tel:+923099677962">Call</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-person"><b>M. Shakir</b><span>+92 321 4852967</span></div>
+          <div class="contact-actions"><a class="whatsapp" href="https://wa.me/923214852967" target="_blank" rel="noopener">WhatsApp</a><a class="call" href="tel:+923214852967">Call</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-person"><b>M. Jaffar</b><span>+92 324 4812613</span></div>
+          <div class="contact-actions"><a class="whatsapp" href="https://wa.me/923244812613" target="_blank" rel="noopener">WhatsApp</a><a class="call" href="tel:+923244812613">Call</a></div>
+        </div>
+      </section>
+      <footer class="final-message">
+        <div class="final-flourish">✦ ❧ ✦</div>
+        <h2 class="serif">We Look Forward<br><em>to Celebrating With You!</em></h2>
+        <p>WITH WARM REGARDS</p>
+        <button class="gold-button replay-invitation" id="replayInvitation">↻ REPLAY INVITATION</button>
+      </footer>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
